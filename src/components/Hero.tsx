@@ -5,6 +5,27 @@ const Hero = () => {
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-[#FFC72C] rounded-full opacity-20 animate-pulse" />
         <div className="absolute bottom-10 -left-10 w-64 h-64 bg-[#FFC72C] rounded-full opacity-15 animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-white rounded-full opacity-5" />
+
+        {/* Золотые дуги Макдоналдс на фоне */}
+        <svg
+          viewBox="0 0 300 280"
+          className="absolute -bottom-10 -left-16 w-72 md:w-96 opacity-15"
+          fill="#FFC72C"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M30 260 C30 130 80 30 120 30 C140 30 155 60 150 120 L135 120 C138 68 128 48 120 48 C90 48 48 140 48 260 Z
+                   M270 260 C270 130 220 30 180 30 C160 30 145 60 150 120 L165 120 C162 68 172 48 180 48 C210 48 252 140 252 260 Z" />
+        </svg>
+
+        <svg
+          viewBox="0 0 300 280"
+          className="absolute -top-10 -right-16 w-72 md:w-96 opacity-10 rotate-180"
+          fill="#FFC72C"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M30 260 C30 130 80 30 120 30 C140 30 155 60 150 120 L135 120 C138 68 128 48 120 48 C90 48 48 140 48 260 Z
+                   M270 260 C270 130 220 30 180 30 C160 30 145 60 150 120 L165 120 C162 68 172 48 180 48 C210 48 252 140 252 260 Z" />
+        </svg>
         {[...Array(8)].map((_, i) => (
           <div
             key={i}
