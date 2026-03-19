@@ -190,7 +190,7 @@ const MenuSection = ({ activeCategory, setActiveCategory }: MenuSectionProps) =>
     <section id="menu" className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-3" style={{ fontFamily: 'Nunito, sans-serif' }}>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-3 font-bebas tracking-wide">
             Наше <span className="text-[#DA020E]">Меню</span>
           </h2>
           <p className="text-gray-500 text-lg">Выбирай любимое и наслаждайся вкусом</p>

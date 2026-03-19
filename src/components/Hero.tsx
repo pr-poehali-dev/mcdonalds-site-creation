@@ -46,7 +46,7 @@ const Hero = () => {
           <div className="inline-block bg-[#FFC72C] text-[#DA020E] font-black px-4 py-1 rounded-full text-sm mb-4 uppercase tracking-wider" style={{ fontFamily: 'Nunito, sans-serif' }}>
             🔥 Горячие новинки!
           </div>
-          <h1 className="text-5xl md:text-7xl font-black text-white leading-none mb-6" style={{ fontFamily: 'Nunito, sans-serif' }}>
+          <h1 className="text-5xl md:text-7xl font-black text-white leading-none mb-6 font-bebas tracking-wide">
             ВСЁ ЧТО<br />
             <span className="text-[#FFC72C]">ТЫ ЛЮБИШЬ</span>
           </h1>

@@ -10,7 +10,7 @@ const Navbar = () => {
             alt="Логотип"
             className="w-10 h-10 object-contain"
           />
-          <span className="text-white font-black text-2xl tracking-tight" style={{ fontFamily: 'Nunito, sans-serif' }}>
+          <span className="text-white font-black text-2xl tracking-widest font-bebas">
             МокДоналдс
           </span>
         </div>
