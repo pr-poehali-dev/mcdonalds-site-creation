@@ -1,12 +1,16 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import MenuSection from "@/components/MenuSection";
 
 const Index = () => {
+  const [activeCategory, setActiveCategory] = useState("all");
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+      <MenuSection activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
     </div>
   );
 };
