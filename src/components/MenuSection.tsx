@@ -25,6 +25,15 @@ const menuItems: MenuItem[] = [
     calories: 563,
   },
   {
+    id: 13,
+    name: "Биг Мок",
+    description: "Две говяжьи котлеты, специальный соус, листья салата, сыр, маринованные огурцы и лук",
+    price: 200,
+    image: "https://cdn.poehali.dev/projects/0ae7e4dc-4992-4bc1-a41b-676956d3b95f/files/5039648b-ff79-419c-b06f-698e89439fdc.jpg",
+    category: "burgers",
+    calories: 508,
+  },
+  {
     id: 2,
     name: "Чикен Крисп",
     description: "Хрустящее куриное филе, свежий салат, майонез в поджаренной булочке",
