@@ -5,9 +5,11 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#DA020E] shadow-lg">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[#FFC72C] rounded-full flex items-center justify-center font-black text-[#DA020E] text-2xl" style={{ fontFamily: 'Nunito, sans-serif' }}>
-            М
-          </div>
+          <img
+            src="https://cdn.poehali.dev/projects/0ae7e4dc-4992-4bc1-a41b-676956d3b95f/bucket/8e019342-9744-4583-a13f-b4648448e38c.png"
+            alt="Логотип"
+            className="w-10 h-10 object-contain"
+          />
           <span className="text-white font-black text-2xl tracking-tight" style={{ fontFamily: 'Nunito, sans-serif' }}>
             МокДоналдс
           </span>
