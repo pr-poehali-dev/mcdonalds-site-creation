@@ -6,13 +6,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img
-            src="https://cdn.poehali.dev/projects/0ae7e4dc-4992-4bc1-a41b-676956d3b95f/bucket/8e019342-9744-4583-a13f-b4648448e38c.png"
-            alt="Логотип"
-            className="w-10 h-10 object-contain"
+            src="https://cdn.poehali.dev/projects/0ae7e4dc-4992-4bc1-a41b-676956d3b95f/bucket/bb4834fe-92d3-450d-b96d-31c34b9af3ec.png"
+            alt="Mokdonald's"
+            className="h-8 object-contain brightness-0 invert"
           />
-          <span className="text-white font-black text-2xl tracking-widest font-bebas">
-            МокДоналдс
-          </span>
         </div>
         <div className="hidden md:flex items-center gap-8">
           <a href="#menu" className="text-white font-semibold hover:text-[#FFC72C] transition-colors duration-200">Меню</a>
