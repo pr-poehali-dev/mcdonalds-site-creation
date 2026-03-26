@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
+import { useCart } from "@/context/CartContext";
 
 interface MenuItem {
   id: number;
@@ -176,14 +177,17 @@ interface MenuSectionProps {
 
 const MenuSection = ({ activeCategory, setActiveCategory }: MenuSectionProps) => {
   const [addedItems, setAddedItems] = useState<number[]>([]);
+  const { addItem, setIsOpen } = useCart();
 
   const filtered = activeCategory === "all"
     ? menuItems
     : menuItems.filter((item) => item.category === activeCategory);
 
-  const handleAdd = (id: number) => {
-    setAddedItems((prev) => [...prev, id]);
-    setTimeout(() => setAddedItems((prev) => prev.filter((i) => i !== id)), 1500);
+  const handleAdd = (item: MenuItem) => {
+    addItem({ id: item.id, name: item.name, price: item.price, image: item.image });
+    setAddedItems((prev) => [...prev, item.id]);
+    setTimeout(() => setAddedItems((prev) => prev.filter((i) => i !== item.id)), 1500);
+    setIsOpen(true);
   };
 
   return (
@@ -263,7 +267,7 @@ const MenuSection = ({ activeCategory, setActiveCategory }: MenuSectionProps) =>
                     )}
                   </div>
                   <button
-                    onClick={() => handleAdd(item.id)}
+                    onClick={() => handleAdd(item)}
                     className={`flex items-center gap-1.5 px-4 py-2 rounded-full font-bold text-sm transition-all duration-200 hover:scale-105 ${
                       addedItems.includes(item.id)
                         ? "bg-green-500 text-white"
