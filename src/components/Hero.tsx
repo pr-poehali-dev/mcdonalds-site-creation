@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-[#DA020E] overflow-hidden flex items-center pt-16">
+    <section className="relative min-h-screen bg-gradient-to-br from-[#b8860b] via-[#d4a017] to-[#FFC72C] overflow-hidden flex items-center pt-16">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-[#FFC72C] rounded-full opacity-20 animate-pulse" />
         <div className="absolute bottom-10 -left-10 w-64 h-64 bg-[#FFC72C] rounded-full opacity-15 animate-pulse" style={{ animationDelay: '1s' }} />
@@ -46,7 +46,7 @@ const Hero = () => {
           <div className="inline-block bg-[#FFC72C] text-[#DA020E] font-black px-4 py-1 rounded-full text-sm mb-4 uppercase tracking-wider" style={{ fontFamily: 'Nunito, sans-serif' }}>
             🔥 Горячие новинки!
           </div>
-          <h1 className="text-5xl md:text-7xl font-black text-white leading-none mb-6 font-bebas tracking-wide">
+          <h1 className="text-4xl md:text-5xl font-black text-white leading-none mb-6 font-bebas tracking-wide">
             ВСЁ ЧТО<br />
             <span className="text-[#FFC72C]">ТЫ ЛЮБИШЬ</span>
           </h1>
