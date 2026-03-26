@@ -8,7 +8,7 @@ const Navbar = () => {
           <img
             src="https://cdn.poehali.dev/projects/0ae7e4dc-4992-4bc1-a41b-676956d3b95f/bucket/bb4834fe-92d3-450d-b96d-31c34b9af3ec.png"
             alt="Mokdonald's"
-            className="h-8 object-contain brightness-0 invert"
+            className="h-8 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(83%) sepia(87%) saturate(600%) hue-rotate(360deg) brightness(103%) contrast(101%)' }}
           />
         </div>
         <div className="hidden md:flex items-center gap-8">
